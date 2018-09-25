@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.1">
+    <persistence-unit name="beerPU" >
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <!-- Configuring JDBC properties -->
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/beer?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" />-->
+            <property name="javax.persistence.jdbc.url" value="studmysql01.fhict.local" />
+            <property name="javax.persistence.jdbc.user" value="dbi368998" />
+            <property name="javax.persistence.jdbc.password" value="Wachtwoord1" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+
+            <!-- Eclipse properties -->
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.logging.logger" value="DefaultLogger"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
