@@ -4,6 +4,7 @@
              version="2.1">
     <persistence-unit name="CoffeePU" >
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <!--<provider>org.hibernate.ejb.HibernatePersistence</provider> -->
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <!-- Configuring JDBC properties -->
