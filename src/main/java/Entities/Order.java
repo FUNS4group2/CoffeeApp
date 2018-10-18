@@ -3,16 +3,21 @@ package Entities;
 import javax.persistence.*;
 
 @Entity  @Table(name = "ORDERS")
-@NamedQueries(
-        @NamedQuery(name = "Order.GetAll", query = "Select * FROM orders")
-)
 public class Order {
     @Id
     private int id;
-    private int product_id;
+
+    @Column
     private boolean sugar;
+
+    @Column
     private boolean milk;
+
+    @Column
     private int amount;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "product_id", nullable = false)
     private Product product;
     Order(){};
 }

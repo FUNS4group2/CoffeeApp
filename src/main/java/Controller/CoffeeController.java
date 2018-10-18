@@ -16,14 +16,14 @@ public class CoffeeController {
         try {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("CoffeePU");
             em = emf.createEntityManager();
+            emf.close();
             jpaCoffee = new JPACoffee(em);
         }
         catch (Exception ex){
             ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
     }
 
-    public List<Product> getAllProducts() {
-        return jpaCoffee.getAllProducts();
-    }
+
 }

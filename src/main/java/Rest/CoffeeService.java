@@ -2,6 +2,7 @@ package Rest;
 
 import Controller.CoffeeController;
 import Entities.Product;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,7 +14,7 @@ public class CoffeeService {
 
     @GET
     @Path("/Coffees")
-    public List<Product> getCoffees(){
-        return coffeeController.getAllProducts();
+    public List<Integer> getCoffees(){
+    throw new NotImplementedException();
     }
 }
