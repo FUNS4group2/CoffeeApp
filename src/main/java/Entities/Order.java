@@ -4,8 +4,7 @@ import javax.persistence.*;
 
 @Entity  @Table(name = "ORDERS")
 @NamedQueries(
-        @NamedQuery(name = "Order.GetAll", query = "Select Product.Type_Name, Milk As MilkAmount, Sugar As SugarAmount, Amount As Size " +
-                                                    "FROM orders Inner join Product on Product_Id = Product.Id")
+        @NamedQuery(name = "Order.GetAll", query = "Select * FROM orders")
 )
 public class Order {
     @Id

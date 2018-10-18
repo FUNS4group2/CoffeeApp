@@ -9,7 +9,7 @@
         <properties>
             <!-- Configuring JDBC properties -->
             <!--<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/beer?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" />-->
-            <property name="javax.persistence.jdbc.url" value="studmysql01.fhict.local" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://studmysql01.fhict.local:3306/dbi368998?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC" />
             <property name="javax.persistence.jdbc.user" value="dbi368998" />
             <property name="javax.persistence.jdbc.password" value="Wachtwoord1" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
