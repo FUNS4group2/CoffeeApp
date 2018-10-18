@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity  @Table(name = "ORDERS")
 public class Order {
+    @GeneratedValue
     @Id
     private int id;
 
@@ -19,5 +20,5 @@ public class Order {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "product_id", nullable = false)
     private Product product;
-    Order(){};
+    public Order(){};
 }

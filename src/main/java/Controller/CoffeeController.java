@@ -2,6 +2,7 @@ package Controller;
 
 import DAL.IsCoffee;
 import DAL.JPACoffee;
+import Entities.Order;
 import Entities.Product;
 
 import javax.persistence.EntityManager;
@@ -16,7 +17,7 @@ public class CoffeeController {
         try {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("CoffeePU");
             em = emf.createEntityManager();
-            emf.close();
+//            emf.close();
             jpaCoffee = new JPACoffee(em);
         }
         catch (Exception ex){
@@ -26,4 +27,7 @@ public class CoffeeController {
     }
 
 
+    public Order doSomething() {
+    return jpaCoffee.something();
+    }
 }

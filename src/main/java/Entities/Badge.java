@@ -1,5 +1,6 @@
 package Entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -8,6 +9,8 @@ import javax.persistence.Table;
 public class Badge {
     @Id
     private String id;
+
+    @Column
     private String name;
 
     Badge(){};
