@@ -13,8 +13,8 @@ public class JPACoffee implements IsCoffee {
     private EntityManager em;
     public JPACoffee(EntityManager em){this.em = em;}
     public Order something(){
-        Order result = null;
-        result = em.find(result.getClass(),21);
+        Order result;
+        result = em.find(Order.class ,21);
         return result;
     }
 
