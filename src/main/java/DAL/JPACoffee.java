@@ -18,4 +18,8 @@ public class JPACoffee implements IsCoffee {
         return result;
     }
 
+    public void placeOrder(int orderId, int milk, int sugar, int userId){
+        //@TODO Implement.
+    }
+
 }

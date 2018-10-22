@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface IsCoffee {
     Order something();
+
+    void placeOrder(int orderId, int milk, int sugar, int userId);
 }
