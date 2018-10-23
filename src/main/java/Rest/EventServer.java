@@ -23,8 +23,7 @@ public class EventServer {
         try {
             jettyServer.start();
             jettyServer.join();
-        } finally {
-//            jettyServer.destroy();
+        } catch (Exception e){ System.out.println("Shits fucked");
         }
     }
 }
