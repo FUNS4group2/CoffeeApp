@@ -1,16 +1,16 @@
 package Entities;
 
-import javax.persistence.Entity;
-import javax.persistence.EntityManager;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-@Entity @Table(name = "USERS")
+//@Entity @Table(name = "USERS")
 public class User {
-    @Id
+   /* @Id
     private int id;
+    @Column
     private String name;
+
     private Order[] orders;
+
     private Badge[] badge;
-    public User(){};
+    public User(){};*/
 }
