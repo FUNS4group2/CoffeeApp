@@ -2,6 +2,7 @@ package Controller;
 
 import DAL.IsCoffee;
 import DAL.JPACoffee;
+import Entities.Order;
 import Entities.Product;
 
 import javax.persistence.EntityManager;
@@ -16,14 +17,21 @@ public class CoffeeController {
         try {
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("CoffeePU");
             em = emf.createEntityManager();
+//            emf.close();
             jpaCoffee = new JPACoffee(em);
         }
         catch (Exception ex){
             ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
     }
 
-    public List<Product> getAllProducts() {
-        return jpaCoffee.getAllProducts();
+
+    public Order doSomething() {
+    return jpaCoffee.something();
+    }
+
+    public void PlaceOrder(int orderId, int milk, int sugar, int userId) {
+        jpaCoffee.placeOrder(orderId, milk, sugar, userId);
     }
 }
