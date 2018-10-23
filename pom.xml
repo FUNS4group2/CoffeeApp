@@ -43,6 +43,7 @@
             <artifactId>hibernate-entitymanager</artifactId>
             <version>4.2.6.Final</version>
         </dependency>-->
+        <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
             <version>9.2.3.v20140905</version>
@@ -88,7 +89,17 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.3</version>
         </dependency>
-    </dependencies>
+    <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-servlets</artifactId>
+        <version>9.4.12.v20180830</version>
+    </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+</dependencies>
 
 
 </project>

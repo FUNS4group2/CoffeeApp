@@ -20,12 +20,11 @@ public class EventServer {
         jerseyServlet.setInitParameter(
                 "jersey.config.server.provider.classnames",
                 CoffeeService.class.getCanonicalName());
-
         try {
             jettyServer.start();
             jettyServer.join();
         } finally {
-            jettyServer.destroy();
+//            jettyServer.destroy();
         }
     }
 }

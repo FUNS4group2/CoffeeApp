@@ -31,7 +31,7 @@ public class CoffeeController {
     return jpaCoffee.something();
     }
 
-    public void PlaceOrder(int orderId, int milk, int sugar, int userId) {
+    public void PlaceOrder(String orderId, int milk, int sugar, int userId) {
         jpaCoffee.placeOrder(orderId, milk, sugar, userId);
     }
 }
